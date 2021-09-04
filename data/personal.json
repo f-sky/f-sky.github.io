@@ -1,0 +1,36 @@
+{
+  "name": "Linghao Chen",
+  "chineseName": "陈凌昊",
+  "worksFor": "Zhejiang University",
+  "links": [
+    {
+      "name": "CV",
+      "link": "/docs/clh-cv.pdf"
+    },
+    {
+      "name": "Email",
+      "link": "mailto:clh.chenlinghao@gmail.com"
+    },
+    {
+      "name": "Google Scholar",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&user=kXf9gvkAAAAJ"
+    },
+    {
+      "name": "GitHub",
+      "link": "http://github.com/f-sky"
+    }
+  ],
+  "interests": ["Computer Vision", "Deep Learning", "Vision + AR/Robotics"],
+  "education": [
+    {
+      "degree": "Ph.D. in Computer Science",
+      "institution": "Zhejiang University",
+      "year": "2019-Now"
+    },
+    {
+      "degree": "Bachelor in Computer Science and English",
+      "institution": "Zhejiang University",
+      "year": "2015-2019"
+    }
+  ]
+}

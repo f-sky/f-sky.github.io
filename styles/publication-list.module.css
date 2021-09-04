@@ -1,0 +1,43 @@
+.filters {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.smallText {
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+.filters::before {
+    content: " ( ";
+}
+
+.filters::after {
+    content: " )";
+}
+
+.filter:not(:last-of-type)::after {
+    content: " / ";
+}
+
+.filter a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.filter a:not(.active) {
+    color: #000000;
+}
+
+.label {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+@media screen and (min-width: 432px)  {
+    .mobileBreak { display: none; }
+
+    .filters {
+        font-size: 1.2rem;
+    }
+}

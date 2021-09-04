@@ -1,0 +1,106 @@
+.publication {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  hyphens: auto;
+}
+
+.image {
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.image img,
+.image video {
+  width: 100%;
+}
+
+.info {
+  width: 100%;
+}
+
+.title {
+  display: block;
+  font-size: large;
+}
+
+.title a:not(a[href]) {
+  color: #000000;
+}
+
+.authors {
+  font-size: 1.1rem;
+  color: #777777;
+}
+
+.authors > span:not(:last-of-type)::after {
+  content: ", \00a0";
+}
+
+.authors a {
+  color: #777777;
+}
+
+.hilightedAuthor a {
+  color: #000000;
+  font-weight: bold;
+}
+
+.venue > span:not(:last-of-type)::after {
+  content: "\00a0";
+  /* content: ", \00a0"; */
+}
+
+.tag::before {
+  content: "[";
+}
+
+.tag::after {
+  content: "] ";
+}
+
+.highlights {
+  color: #e83015;
+}
+
+.links {
+  display: flex;
+}
+
+.link {
+  padding: 0.25rem;
+}
+
+.link > a {
+  font-size: medium;
+  transition: all ease-in-out 0.1s;
+}
+
+.link::before {
+  content: "[";
+}
+
+.link::after {
+  content: "]";
+}
+
+.links > a:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 432px) {
+  .publication {
+    flex-direction: row;
+    hyphens: auto;
+  }
+
+  .image {
+    width: 30%;
+    max-width: 300px;
+    padding: 0.5rem 1rem 0 0;
+  }
+
+  .info {
+    width: 70%;
+  }
+}

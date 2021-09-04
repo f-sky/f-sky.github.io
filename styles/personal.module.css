@@ -1,0 +1,74 @@
+
+.profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+@media only screen and (min-width: 832px) {
+    .profile {
+        flex-direction: row;
+    }
+}
+
+.profileInfo {
+    flex: 1;
+}
+
+.name {
+    margin: 0;
+}
+
+.chineseName {
+    font-size: 1.25rem;
+    color: #3d3d3d;
+    text-shadow: 1px 1px 1px rgba(45, 157, 167, 0.1);
+    opacity: 0.6;
+    margin: 0;
+}
+
+.fakeEmail {
+    display: none;
+}
+
+.email {
+    margin: 1.5rem 0;
+    line-height: 1;
+}
+
+.email a {
+    color: #000;
+}
+
+.links span:not(:last-of-type)::after {
+    content: " ∙ ";
+}
+
+.blurb {
+    margin: 1rem 0;
+    padding-top: 0.6em;
+    padding-bottom: 0.8em;
+    text-align: justify;
+}
+
+.atsign {
+    color: #DB4D6D;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.worksFor {
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgba(45, 157, 167, 0.1);
+    opacity: 0.6;
+    margin: 0;
+}

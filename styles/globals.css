@@ -1,0 +1,58 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+/* Partially derived from https://ezyang.com. Thanks Edward Yang! */
+
+body {
+  background: #ffffff no-repeat fixed top left;
+  /* background: #fdfcf9 no-repeat fixed top left; */
+  margin: 3rem 0;
+  font-family: Lato, sans-serif;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+h1 {
+  color: #000000;
+  font-weight: normal;
+  text-shadow: 1px 1px 1px rgba(165, 165, 165, 0.3);
+  text-align: center;
+  font-size: 4rem;
+}
+
+h2 {
+  font-weight: normal;
+  margin: 0.3em 0 0.2em;
+  text-shadow: 1px 1px 1px rgba(165, 165, 165, 0.3);
+  color: #000000;
+  font-size: 2rem;
+}
+
+a {
+  color: #0567e7;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
+
+a img {
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 832px) {
+  h1 {
+    font-size: 3rem;
+  }
+}

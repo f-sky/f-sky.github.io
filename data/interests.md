@@ -1,0 +1,6 @@
+I have a broad interest in the science and engineering aspects of intelligent systems, with a particular focus on Computer Vision and Robotics. In specific, my interests land on the intersection area between 3D Computer Vision and Deep Learning, with its applications in Augmented Reality and Autonomous Driving. 
+I have been working on several fundamental aspects of 3D Vision, including 3D semantics, 3D representation learning, 2D/3D correspondence estimation, shape reconstruction and pose estimation.
+
+Recently, my research focuses on new SLAM (or SfM and MVS in the offline scenario) pipelines that seamlessly integrate the power of neural networks into the geometric structure of the problem.
+Going forward, I am particularly interested in improving these perception pipelines to be self-supervised in the context of interactive environments with an intelligent agent.
+<!-- studying these questions in the context of complex, naturalistic tasks, to understand the extent to which our brain is indeed “optimal” and its limitations when facing challenging inference problem. -->
