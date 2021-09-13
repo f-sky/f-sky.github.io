@@ -46,6 +46,11 @@
   font-weight: bold;
 }
 
+.hilightedAuthor span {
+  color: #000000;
+  font-weight: bold;
+}
+
 .venue > span:not(:last-of-type)::after {
   content: "\00a0";
   /* content: ", \00a0"; */

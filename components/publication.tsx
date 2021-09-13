@@ -31,11 +31,18 @@ export const Publication = memo<Omit<PublicationType, "date">>(function Publicat
         <div className={classes.title}>
           <a href={paperLink} dangerouslySetInnerHTML={{ __html: title }} />
         </div>
-        <div className={classes.authors}>
+        <div className={classes.authors} >
           {author.map(({ given, family }) => (
-            <span key={given + family}>
-              <span dangerouslySetInnerHTML={{ __html: given }} /> <span dangerouslySetInnerHTML={{ __html: family }} />
+              given=="Linghao"?
+                  <span key={given + family} className={classes.hilightedAuthor}>
+              <span dangerouslySetInnerHTML={{__html: given }} /> <span dangerouslySetInnerHTML={{ __html: family }} />
+            </span>:<span key={given + family}>
+              <span  dangerouslySetInnerHTML={{__html: given }} /> <span  dangerouslySetInnerHTML={{ __html: family }} />
             </span>
+            //   <span key={given + family}>
+            //   <span dangerouslySetInnerHTML={{__html: given }} /> <span dangerouslySetInnerHTML={{ __html: family }} />
+            //  </span>
+
           ))}
         </div>
         <div className={classes.venue}>
