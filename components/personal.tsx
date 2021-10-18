@@ -9,7 +9,8 @@ export const Personal = memo<PersonalType>(function Personal(props) {
   return (
     <section className={classes.personal}>
       <div className={classes.profile}>
-        <img className={classes.portrait} src="images/portrait.jpg" alt="pottrait" />
+        {/*<img className={classes.portrait} src="images/portrait.jpg" alt="pottrait" />*/}
+        <img className={classes.portrait} src="images/pic.jpg" alt="pottrait" />
         <div className={classes.profileInfo}>
           <h1 className={classes.name}>{name}</h1>
           <h3 className={classes.chineseName}>{chineseName}</h3>
