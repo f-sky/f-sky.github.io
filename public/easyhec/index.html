@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EasyHeC</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- cover -->
+<section>
+    <div class="jumbotron text-center mt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2><b>EasyHeC</b>: Accurate and Automatic Hand-eye Calibration via <br/>Differentiable Rendering
+                        and Space Exploration</h2>
+                    <!--                    <h4 style="color:#5a6268;">ICRA 2023</h4>-->
+                    <hr>
+                    <h6><a href="https://ootts.github.io/" target="_blank">Linghao Chen</a><sup>1,2</sup>,
+                        <a href="https://yzqin.github.io/" target="_blank">Yuzhe Qin</a><sup>2</sup>,
+                        <a href="https://xzhou.me" target="_blank">Xiaowei Zhou</a><sup>1</sup>,
+                        <a href="http://ai.ucsd.edu/~haosu/" target="_blank">Hao Su</a><sup>2</sup>
+                    </h6>
+                    <p><sup>1</sup>State Key Lab of CAD & CG, Zhejiang University
+                        <br>
+                        <sup>2</sup>University of California, San Diego
+                        <br>
+
+                    <div class="row justify-content-center">
+                        <div class="column">
+                            <p class="mb-5"><a class="btn btn-large btn-light" href="https://ootts.github.io/easyhec/files/EasyHeC.pdf" role="button"
+                                               target="_blank">
+                                <i class="fa fa-file"></i> Paper</a></p>
+                        </div>
+                        <!--                        <div class="column">-->
+                        <!--                            <p class="mb-5"><a class="btn btn-large btn-light" href="files/supp.pdf" role="button" target="_blank">-->
+                        <!--                                <i class="fa fa-file"></i> Supplementary</a> </p>-->
+                        <!--                        </div>-->
+                        <div class="column">
+                            <p class="mb-5"><a class="btn btn-large btn-light"
+                                               href="https://github.com/ootts/EasyHeC" role="button"
+                                               target="_blank">
+                                <i class="fa fa-github-alt"></i> Code</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- abstract -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Abstract</h3>
+                <hr style="margin-top:0px">
+                <img src="images/teaser_v11.png" width="700">
+                <!--                <h6 style="color:#8899a5"> ????Animatable NeRF can reconstruct an animatable human model from a sparse multi-view video.</h6>-->
+<!--                <image>-->
+<!--                    <source src="images/teaser.m4v" type="video/mp4">-->
+<!--                </image>-->
+                <br><br>
+                <!--                <p class="text-left, "> Hand-eye calibration is a critical task in robotics, as it directly affects the efficacy of critical operations such as manipulation and grasping. Traditional methods for achieving this objective necessitate the careful design of joint poses and the use of specialized calibration markers, while most recent learning-based approaches using solely pose regression are limited in their abilities to diagnose inaccuracies. In this work, we introduce a new approach to hand-eye calibration called EasyHeC, which is markerless, white-box, and offers comprehensive coverage of positioning accuracy across the entire robot configuration space. We introduce two key technologies: differentiable rendering-based camera pose optimization and consistency-based joint space exploration, which enables accurate end-to-end optimization of the calibration process and eliminates the need for the laborious manual design of robot joint poses. Our evaluation demonstrates superior performance in synthetic and real-world datasets, enhancing downstream manipulation tasks by providing precise camera poses for locating and interacting with objects.</p>-->
+                <p class="text-justify"> Hand-eye calibration is a critical task in robotics, as it directly affects the
+                    efficacy of critical operations such as manipulation and grasping. Traditional methods for achieving
+                    this objective necessitate the careful design of joint poses and the use of specialized calibration
+                    markers, while most recent learning-based approaches using solely pose regression are limited in
+                    their abilities to diagnose inaccuracies. In this work, we introduce a new approach to hand-eye
+                    calibration called EasyHeC, which is markerless, white-box, and offers comprehensive coverage of
+                    positioning accuracy across the entire robot configuration space. We introduce two key technologies:
+                    differentiable rendering-based camera pose optimization and consistency-based joint space
+                    exploration, which enables accurate end-to-end optimization of the calibration process and
+                    eliminates the need for the laborious manual design of robot joint poses. Our evaluation
+                    demonstrates superior performance in synthetic and real-world datasets, enhancing downstream
+                    manipulation tasks by providing precise camera poses for locating and interacting with objects.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Overview video</h3>
+                <hr style="margin-top:0px">
+                <!--                <div class="embed-responsive embed-responsive-16by9">-->
+                <!--                    <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="https://www.youtube.com/watch?v=_PX8s-ZXPWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
+                <!--                    <iframe src="videos/EasyHeC_overview_1_small.mp4"></iframe>-->
+<!--                <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">-->
+<!--                    <source src="videos/EasyHeC_overview_1_small.mp4" type="video/mp4">-->
+<!--                </video>-->
+                <div class="embed-responsive embed-responsive-16by9">
+<!--                <iframe width="80%" src="videos/EasyHeC_overview_v2_cut_small.mp4"></iframe>-->
+<!--                <iframe width="80%" src="https://youtu.be/04cmJlO9ZnQ"></iframe>-->
+                    <iframe style="clip-path: inset(1px 1px)" width="80%" height="80%" src="https://www.youtube.com/watch?v=04cmJlO9ZnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+<!--                <iframe width="80%">-->
+<!--                    <source src="videos/EasyHeC_overview_1_small.mp4" type="video/mp4">-->
+<!--                </iframe>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<!--<br>-->
+<br>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Accurate calibration via differentiable rendering</h3>
+                <hr style="margin-top:0px">
+                <!--                <div style="justify-content: center;align-items: center;">-->
+                <!--                    <table style="justify-content: center;align-items: center;">-->
+                <!--                        <tr>-->
+                <!--                            <td><img src="images/xarm_syn_result_3.png" width="500"></td>-->
+                <!--                            <td><img src="images/baxter_3d_result_fig.png" width="500"></td>-->
+                <!--                        </tr>-->
+                <!--                        <tr>-->
+                <!--                            <th>Results on Synthetic xArm dataset</th>-->
+                <!--                            <th>Results on Real Baxter dataset</th>-->
+                <!--                        </tr>-->
+
+                <!--                    </table>-->
+                <!--                </div>-->
+
+                <!--                <div class="embed-responsive embed-responsive-16by9">-->
+                <img src="images/xarm_baxter_result.png" width="1000">
+                <!--                <h4>Results on Synthetic xArm dataset</h4>-->
+                <!--                <img src="images/baxter_3d_result.png" width="500">-->
+                <!--                <h4>Results on Real Baxter dataset</h4>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Automatic calibration via joint space exploration</h3>
+                <hr style="margin-top:0px">
+                <!--                <div style="justify-content: center;align-items: center;">-->
+                <!--                    <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="videos/hec_demo4_cropped.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
+                <!--                <iframe src="videos/EasyHeC_demo_video.mp4" ></iframe>-->
+                <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                    <source src="videos/hec_demo4_cropped.mp4" type="video/mp4">
+                </video>
+                <!--                    <video src="videos/EasyHeC_demo_video.mp4" style="width:85%" autoplay="autoplay"></video>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Real-world applications powered by EasyHeC</h3>
+                <hr style="margin-top:0px">
+                <!--                <div style="justify-content: center;align-items: center;">-->
+                <!--                    <img src="images/cotpc.png" width="1000">-->
+                <!--                </div>-->
+                <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                    <source src="videos/easyhec_page_cotpc_2videoto1.mp4" type="video/mp4">
+                </video>
+                >
+            </div>
+        </div>
+    </div>
+</section>
+<!-- novel pose synthesis results-->
+<!--<section>-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-12 text-center">-->
+<!--                <h3>Comparison on novel pose synthesis</h3>-->
+<!--                <hr style="margin-top:0px">-->
+<!--&lt;!&ndash;                <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <source src="images/novel_pose_synthesis1.m4v" type="video/mp4">&ndash;&gt;-->
+<!--&lt;!&ndash;                </video>&ndash;&gt;-->
+<!--                <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">-->
+<!--                    <source src="videos/hec_demo5_cropped.mp4" type="video/mp4">-->
+<!--                </video>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--<br>-->
+
+<!--&lt;!&ndash; novel view synthesis results &ndash;&gt;-->
+<!--<section>-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-12 text-center">-->
+<!--                <h3>Comparison on novel view synthesis</h3>-->
+<!--                <hr style="margin-top:0px">-->
+<!--                <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">-->
+<!--                    <source src="images/novel_view_synthesis1.m4v" type="video/mp4">-->
+<!--                </video>-->
+<!--                <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">-->
+<!--                    <source src="images/novel_view_synthesis2.m4v" type="video/mp4">-->
+<!--                </video>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--<br>-->
+
+<!--&lt;!&ndash; reposed geometry results &ndash;&gt;-->
+<!--<section>-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-12 text-center">-->
+<!--                <h3>Reposing the reconstructed geometry</h3>-->
+<!--                <hr style="margin-top:0px">-->
+<!--                <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">-->
+<!--                    <source src="images/reposed_geometry.m4v" type="video/mp4">-->
+<!--                </video>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<br>
+
+<!-- citing -->
+<div class="container">
+    <div class="row ">
+        <div class="col-12">
+            <h3>Citation</h3>
+            <hr style="margin-top:0px">
+            <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<div>
+    TODO
+</div>
+<code>@inproceedings{chen2023easyhec,
+  title={EasyHeC: Accurate and Automatic Hand-eye Calibration via Differentiable Rendering and Space Exploration},
+  author={Chen, Linghao and Qin, Yuzhe and Zhou, Xiaowei and Su, Hao},
+  year={2023}
+}</code></pre>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center" style="margin-bottom:10px">
+    Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+</footer>
+
+</body>
+</html>
