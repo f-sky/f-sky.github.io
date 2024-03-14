@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EasyHeC</title>
+    <title>EasyHeC++</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,37 +19,41 @@
                     <h2><b>EasyHeC++</b>: Fully Automatic Hand-Eye Calibration  <br/> with Pretrained Image Models</h2>
                     <!--                    <h4 style="color:#5a6268;">ICRA 2023</h4>-->
                     <hr>
-                    <h6><a href="https://ootts.github.io/" target="_blank">Linghao Chen</a><sup>1,2</sup>,
-                        <a href="" target="_blank">Kangfu Zheng</a><sup>3</sup>,
-                        <a href="" target="_blank">Zhengdong Hong</a><sup>1,2</sup>,
+                    <h6><a href="https://ootts.github.io/" target="_blank">Linghao Chen</a><sup>1,2*</sup>,
+<!--                        <a href="" target="_blank">Kangfu Zheng</a><sup>3*</sup>,-->
+                        Kangfu Zheng<sup>3*</sup>,
+<!--                        <a href="" target="_blank">Zhengdong Hong</a><sup>1,2*</sup>,-->
+                        Zhengdong Hong<sup>1,2*</sup>,
                         <a href="https://xzhou.me" target="_blank">Xiaowei Zhou</a><sup>1</sup>,
-                        <a href="http://ai.ucsd.edu/~haosu/" target="_blank">Hao Su</a><sup>2</sup>
+                        <a href="https://cseweb.ucsd.edu/~haosu/" target="_blank">Hao Su</a><sup>2</sup>
                     </h6>
-                    <p><sup>1</sup>State Key Lab of CAD & CG, Zhejiang University
-                        <br>
-                        <sup>2</sup>University of California, San Diego
-                        <br>
+                    <p><sup>1</sup>Zhejiang University
+<!--                        <br>-->
+                        <sup>2</sup>UC San Diego
+<!--                        <br>-->
                         <sup>3</sup>Tsinghua University
                         <br>
+                        <sup>*</sup>Equal contribution
+                        <br>
 
-<!--                    <div class="row justify-content-center">-->
-<!--                        <div class="column">-->
-<!--                            <p class="mb-5"><a class="btn btn-large btn-light"-->
-<!--                                               href="https://arxiv.org/abs/2305.01191" role="button"-->
-<!--                                               target="_blank">-->
-<!--                                <i class="fa fa-file"></i> Paper</a></p>-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash;                        <div class="column">&ndash;&gt;-->
-<!--                        &lt;!&ndash;                            <p class="mb-5"><a class="btn btn-large btn-light" href="files/supp.pdf" role="button" target="_blank">&ndash;&gt;-->
-<!--                        &lt;!&ndash;                                <i class="fa fa-file"></i> Supplementary</a> </p>&ndash;&gt;-->
-<!--                        &lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--                        <div class="column">-->
-<!--                            <p class="mb-5"><a class="btn btn-large btn-light"-->
-<!--                                               href="https://github.com/ootts/EasyHeC" role="button"-->
-<!--                                               target="_blank">-->
-<!--                                <i class="fa fa-github-alt"></i> Code</a></p>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <div class="row justify-content-center">
+                        <div class="column">
+                            <p class="mb-5"><a class="btn btn-large btn-light"
+                                               href="files/easyhec++.pdf" role="button"
+                                               target="_blank">
+                                <i class="fa fa-file"></i> Paper</a></p>
+                        </div>
+                        <!--                        <div class="column">-->
+                        <!--                            <p class="mb-5"><a class="btn btn-large btn-light" href="files/supp.pdf" role="button" target="_blank">-->
+                        <!--                                <i class="fa fa-file"></i> Supplementary</a> </p>-->
+                        <!--                        </div>-->
+                        <div class="column">
+                            <p class="mb-5"><a class="btn btn-large btn-light"
+                                               href="https://github.com/ootts/EasyHeC" role="button"
+                                               target="_blank">
+                                <i class="fa fa-github-alt"></i> Code (Coming soon)</a></p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -65,20 +69,25 @@
             <div class="col-12 text-center">
                 <h3>Abstract</h3>
                 <hr style="margin-top:0px">
-                <img src="images/teaser_v11.png" width="90%">
+                <p class="text-justify"> Hand-eye calibration plays a fundamental role in robotics by directly influencing the efficiency of critical operations such as manipulation and grasping. In this work, we present a novel framework, EasyHeC++, designed for fully automatic hand-eye calibration. In contrast to previous methods that necessitate manual calibration, specialized markers, or the training of arm-specific neural networks, our approach is the first system that enables accurate calibration of any robot arm in a marker-free, training-free, and fully automatic manner. Our approach employs a two-step process. First, we initialize the camera pose using a sampling or feature-matching-based method with the aid of pretrained image models. Subsequently, we perform pose optimization through differentiable rendering. Extensive experiments demonstrate the system’s superior accuracy in both synthetic and real-world datasets across various robot arms and camera settings. The code will be publicly available upon the publication of this paper.
+                </p>
+<!--                <img src="images/teaser.png" width="80%">-->
+<!--                <br><br>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>Comparison against previous methods</h3>
+                <hr style="margin-top:0px">
+<!--                <p class="text-justify"> Hand-eye calibration plays a fundamental role in robotics by directly influencing the efficiency of critical operations such as manipulation and grasping. In this work, we present a novel framework, EasyHeC++, designed for fully automatic hand-eye calibration. In contrast to previous methods that necessitate manual calibration, specialized markers, or the training of arm-specific neural networks, our approach is the first system that enables accurate calibration of any robot arm in a marker-free, training-free, and fully automatic manner. Our approach employs a two-step process. First, we initialize the camera pose using a sampling or feature-matching-based method with the aid of pretrained image models. Subsequently, we perform pose optimization through differentiable rendering. Extensive experiments demonstrate the system’s superior accuracy in both synthetic and real-world datasets across various robot arms and camera settings. The code will be publicly available upon the publication of this paper.-->
+<!--                </p>-->
+                <img src="images/teaser.png" width="80%">
                 <br><br>
-                <p class="text-justify"> Hand-eye calibration is a critical task in robotics, as it directly affects the
-                    efficacy of critical operations such as manipulation and grasping. Traditional methods for achieving
-                    this objective necessitate the careful design of joint poses and the use of specialized calibration
-                    markers, while most recent learning-based approaches using solely pose regression are limited in
-                    their abilities to diagnose inaccuracies. In this work, we introduce a new approach to hand-eye
-                    calibration called EasyHeC, which is markerless, white-box, and offers comprehensive coverage of
-                    positioning accuracy across the entire robot configuration space. We introduce two key technologies:
-                    differentiable rendering-based camera pose optimization and consistency-based joint space
-                    exploration, which enables accurate end-to-end optimization of the calibration process and
-                    eliminates the need for the laborious manual design of robot joint poses. Our evaluation
-                    demonstrates superior performance in synthetic and real-world datasets, enhancing downstream
-                    manipulation tasks by providing precise camera poses for locating and interacting with objects.</p>
             </div>
         </div>
     </div>
@@ -89,10 +98,10 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h3>Overview video</h3>
-                <hr style="margin-top:0px">
+<!--                <hr style="margin-top:0px">-->
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%"
-                            src="https://www.youtube.com/embed/WCsGk_WPukc" frameborder="0"
+                            src="videos/proj_page_video.mp4" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen=""></iframe>
                 </div>
@@ -128,75 +137,75 @@
 <br>
 <!--<br>-->
 <br>
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h3>Accurate calibration via differentiable rendering</h3>
-                <hr style="margin-top:0px">
-                <!--                <div style="justify-content: center;align-items: center;">-->
-                <!--                    <table style="justify-content: center;align-items: center;">-->
-                <!--                        <tr>-->
-                <!--                            <td><img src="images/xarm_syn_result_3.png" width="500"></td>-->
-                <!--                            <td><img src="images/baxter_3d_result_fig.png" width="500"></td>-->
-                <!--                        </tr>-->
-                <!--                        <tr>-->
-                <!--                            <th>Results on Synthetic xArm dataset</th>-->
-                <!--                            <th>Results on Real Baxter dataset</th>-->
-                <!--                        </tr>-->
+<!--<section>-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-12 text-center">-->
+<!--                <h3>Accurate calibration via differentiable rendering</h3>-->
+<!--                <hr style="margin-top:0px">-->
+<!--                &lt;!&ndash;                <div style="justify-content: center;align-items: center;">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <table style="justify-content: center;align-items: center;">&ndash;&gt;-->
+<!--                &lt;!&ndash;                        <tr>&ndash;&gt;-->
+<!--                &lt;!&ndash;                            <td><img src="images/xarm_syn_result_3.png" width="500"></td>&ndash;&gt;-->
+<!--                &lt;!&ndash;                            <td><img src="images/baxter_3d_result_fig.png" width="500"></td>&ndash;&gt;-->
+<!--                &lt;!&ndash;                        </tr>&ndash;&gt;-->
+<!--                &lt;!&ndash;                        <tr>&ndash;&gt;-->
+<!--                &lt;!&ndash;                            <th>Results on Synthetic xArm dataset</th>&ndash;&gt;-->
+<!--                &lt;!&ndash;                            <th>Results on Real Baxter dataset</th>&ndash;&gt;-->
+<!--                &lt;!&ndash;                        </tr>&ndash;&gt;-->
 
-                <!--                    </table>-->
-                <!--                </div>-->
+<!--                &lt;!&ndash;                    </table>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </div>&ndash;&gt;-->
 
-                <!--                <div class="embed-responsive embed-responsive-16by9">-->
-                <img src="images/xarm_baxter_result_v3.png" width="100%">
-                <!--                <h4>Results on Synthetic xArm dataset</h4>-->
-                <!--                <img src="images/baxter_3d_result.png" width="500">-->
-                <!--                <h4>Results on Real Baxter dataset</h4>-->
-                <!--                </div>-->
-            </div>
-        </div>
-    </div>
-</section>
-<br>
-<br>
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h3>Automatic calibration via joint space exploration</h3>
-                <hr style="margin-top:0px">
-                <!--                <div style="justify-content: center;align-items: center;">-->
-                <!--                    <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="videos/hec_demo4_cropped.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-                <!--                <iframe src="videos/EasyHeC_demo_video.mp4" ></iframe>-->
-                <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                    <source src="videos/hec_demo4_cropped.mp4" type="video/mp4">
-                </video>
-                <!--                    <video src="videos/EasyHeC_demo_video.mp4" style="width:85%" autoplay="autoplay"></video>-->
-                <!--                </div>-->
-            </div>
-        </div>
-    </div>
-</section>
+<!--                &lt;!&ndash;                <div class="embed-responsive embed-responsive-16by9">&ndash;&gt;-->
+<!--                <img src="images/xarm_baxter_result_v3.png" width="100%">-->
+<!--                &lt;!&ndash;                <h4>Results on Synthetic xArm dataset</h4>&ndash;&gt;-->
+<!--                &lt;!&ndash;                <img src="images/baxter_3d_result.png" width="500">&ndash;&gt;-->
+<!--                &lt;!&ndash;                <h4>Results on Real Baxter dataset</h4>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--<br>-->
+<!--<br>-->
+<!--<section>-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-12 text-center">-->
+<!--                <h3>Automatic calibration via joint space exploration</h3>-->
+<!--                <hr style="margin-top:0px">-->
+<!--                &lt;!&ndash;                <div style="justify-content: center;align-items: center;">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="videos/hec_demo4_cropped.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>&ndash;&gt;-->
+<!--                &lt;!&ndash;                <iframe src="videos/EasyHeC_demo_video.mp4" ></iframe>&ndash;&gt;-->
+<!--                <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">-->
+<!--                    <source src="videos/hec_demo4_cropped.mp4" type="video/mp4">-->
+<!--                </video>-->
+<!--                &lt;!&ndash;                    <video src="videos/EasyHeC_demo_video.mp4" style="width:85%" autoplay="autoplay"></video>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 <br>
 <br>
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h3>Real-world applications powered by EasyHeC</h3>
-                <hr style="margin-top:0px">
-                <!--                <div style="justify-content: center;align-items: center;">-->
-                <!--                    <img src="images/cotpc.png" width="1000">-->
-                <!--                </div>-->
-                <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                    <source src="videos/easyhec_page_cotpc_2videoto1.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section>-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-12 text-center">-->
+<!--                <h3>Real-world applications powered by EasyHeC</h3>-->
+<!--                <hr style="margin-top:0px">-->
+<!--                &lt;!&ndash;                <div style="justify-content: center;align-items: center;">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <img src="images/cotpc.png" width="1000">&ndash;&gt;-->
+<!--                &lt;!&ndash;                </div>&ndash;&gt;-->
+<!--                <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">-->
+<!--                    <source src="videos/easyhec_page_cotpc_2videoto1.mp4" type="video/mp4">-->
+<!--                </video>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 <!-- novel pose synthesis results-->
 <!--<section>-->
 <!--    <div class="container">-->
@@ -258,11 +267,11 @@
             <h3>Citation</h3>
             <hr style="margin-top:0px">
             <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
-<code>@inproceedings{chen2023easyhec,
-  title={EasyHeC: Accurate and Automatic Hand-eye Calibration via Differentiable Rendering and Space Exploration},
-  author={Chen, Linghao and Qin, Yuzhe and Zhou, Xiaowei and Su, Hao},
+<code>@inproceedings{chen2023easyhec++,
+  title={Fully Automatic Hand-Eye Calibration with Pretrained Image Models},
+  author={Chen, Linghao and Zheng, Kangfu and Hong, Zhengdong and Zhou, Xiaowei and Su, Hao},
   journal={arXiv preprint},
-  year={2023}
+  year={2024}
 }</code></pre>
             <hr>
         </div>
